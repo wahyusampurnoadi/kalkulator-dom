@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Kalkulator Sederhana</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculation">
+        <div class="input">
+          <input type="number" id="input-1" placeholder="masukan angka" oninput="getValue1()" />
+          <input type="number" id="input-2" placeholder="masukan angka" oninput="getValue2()" />
+        </div>
+        <div class="operator">
+          <div id="plus" onclick="tambahkan(Number(inputFirst.value), Number(inputSecond.value))">+</div>
+          <div id="minus" onclick="kurangkan(Number(inputFirst.value), Number(inputSecond.value))">-</div>
+          <div id="times" onclick="kalikan(Number(inputFirst.value), Number(inputSecond.value))">x</div>
+          <div id="divide" onclick="bagikan(Number(inputFirst.value), Number(inputSecond.value))">/</div>
+        </div>
+        <div id="reset">
+          <button onclick="reset()">RESET</button>
+        </div>
+      </div>
+      <div id="result"></div>
+    </div>
+
+    <!-- link javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

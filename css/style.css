@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(255, 223, 0, 1) 0%, rgba(245, 219, 100, 1) 35%, rgba(255, 237, 199, 1) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 650px;
+  height: 210px;
+  background-color: #f4b286;
+  margin: 200px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.input input {
+  width: 170px;
+  height: 50px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: antiquewhite;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.operator {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.operator #plus {
+  width: 70px;
+  height: 50px;
+  background-color: rgb(255, 160, 28);
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.operator #minus {
+  width: 70px;
+  height: 50px;
+  background-color: rgb(255, 160, 28);
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.operator #times {
+  width: 70px;
+  height: 50px;
+  background-color: rgb(255, 160, 28);
+  text-align: center;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.operator #divide {
+  width: 70px;
+  height: 50px;
+  background-color: rgb(255, 160, 28);
+  text-align: center;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.operator #plus:hover,
+.operator #minus:hover,
+.operator #times:hover,
+.operator #divide:hover {
+  background-color: rgb(253, 197, 49);
+}
+
+#reset button {
+  width: 355px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: red;
+  cursor: pointer;
+  background-color: antiquewhite;
+  letter-spacing: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+#reset button:hover {
+  background-color: rgb(255, 77, 42);
+  color: white;
+}
+
+#result {
+  width: 230px;
+  height: 170px;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: rgb(255, 160, 28);
+  text-align: center;
+  line-height: 150px;
+  font-size: 22px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* versi mobile view */
+@media screen and (max-width: 429px) {
+  .container {
+    display: block;
+    width: 300px;
+    height: 470px;
+  }
+
+  .input input {
+    width: 260px;
+    margin-bottom: 15px;
+  }
+
+  #reset button {
+    width: 260px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  #result {
+    width: 235px;
+  }
+}
