@@ -12,12 +12,10 @@ const result = document.getElementById("result");
 // mengambil nilai input
 function getValue1() {
   let value1 = inputFirst.value;
-  console.log(value1);
 }
 
 function getValue2() {
   let value2 = inputSecond.value;
-  console.log(value2);
 }
 
 //membuat fungsi tambah
